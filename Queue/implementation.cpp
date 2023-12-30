@@ -44,4 +44,4 @@ void control::display()
 		q=q->link;
 	}
 }
-//mussaratabdullah@gmail.com
+//shahzadktk885@gmail.com
