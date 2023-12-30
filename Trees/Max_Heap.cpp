@@ -251,16 +251,16 @@ void case_b(node *&parent, node *&loc, node *&lastNode)
 	}
 	else if(loc->left == lastNode)
 	{
-		node *lNp=loc->parent;
-		if(lNp->left == loc)
+		node *locp=loc->parent;
+		if(locp->left == loc)
 		{
-			lNp->left=lastNode;
+			locp->left=lastNode;
 		}
 		else
 		{
-			lNp->right=lastNode;
+			locp->right=lastNode;
 		}
-		lastNode->parent=lNp;
+		lastNode->parent=locp;
 	}
 	else //We even dont need this block
 	{
@@ -422,13 +422,13 @@ int main()
 	insert(26);*/
 	//insert(3);
 	//inorder(root);
-	insert(90);
-	insert(40);
-	insert(75);
-	insert(20);
-	insert(23);
-	insert(66);
+	insert(25);
+	insert(35);
+	insert(18);
+	insert(9);
+	insert(46);
 	insert(70);
+	insert(48);
 /*	insert(12);
 	insert(18);
 	insert(15);
@@ -436,6 +436,6 @@ int main()
 	insert(38);
 	insert(14);
 	insert(80);*/
-	del(90);
+	//del(23);
 	level_order_traversel();
 }
