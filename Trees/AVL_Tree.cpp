@@ -163,3 +163,5 @@ int main()
 	root=insert(96, root, ht_inc);
 	inorder(root);
 }
+
+//visit Q2 for alternative AVL
