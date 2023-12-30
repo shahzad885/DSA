@@ -361,7 +361,7 @@ void case_c(node *&parent, node *&loc, node *&lastNode)
 	}
 	delete(loc);
 	//Swapping with Parent
-	if(lastNode->parent->key>lastNode->key)
+	if(lastNode->parent->key<lastNode->key)
 	{
 		swaping_to_balance(lastNode);
 	}//Swapping with child
